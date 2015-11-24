@@ -1,0 +1,159 @@
+<!DOCTYPE HTML><html><head><meta http-equiv="X-UA-Compatible" content="IE=edge"></head><body><span class='dn fs8px fl w300px h50px m5px bgc_ngreen m5px br5px b1px-sc_hccc bgc_hccc'></span></body></html>
+<script type="text/javascript" src='html.js'></script>
+<script>
+
+
+Head.meta([
+		{ charset:'utf-8'},
+		{name:'viewport',content:'width=device-width;initial-scale=1.0'}
+	]);
+Head.meta({custom:"john",suck:'dick'});
+var link=new Element('link',{rel:'stylesheet', href:'../../helpers/alias.css'});
+link.appendTo(Head.head);
+ var body=document.body;
+body.className="hello";
+
+ modifyElement(".hello");
+
+ var div= body.append("div",{class:"w500px h500px b1px-sc_hccc",_c:"thelll"},true);
+
+
+//  images=['../assets/img/gimg/images(9)','../assets/img/gimg/images(12)','../assets/img/gimg/images(22)','../assets/img/gimg/images(3)'];
+
+//  // div.append("h1",{text:'Hello everybody how d youdo'},true)
+//  // 	.selectText(/(H)/).styler({color:'red','font-size':'44px'});
+//  	/*div.append("button",{text:"click"},true)
+//  		.event({
+//  			click:function(){
+//  				var myReq=new XMLHttpRequest();
+//  				myReq.onreadyStateChage=function(){ console.log("we arecalled");};
+//  				var data=myReq.open('GET',"http://mysites/AliasCSS/test.php",true);
+//  				console.log(data);
+//  				myReq.send(null);
+//  				this.parentNode.append("h1",{text:data});
+//  			}
+//  		})
+// */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //var slider=slider(images,function(each,i){
+// var img=div.append('img',{src:images[0],class:'ttfl',text:"HI therererere"},true);
+// 	//.append('img',{src:images[1]})
+// 	//.append('img',{src:images[2]})
+// 	//.append('img',{src:images[3]})
+// 	//.append('h1',{text:"Thats all we can do now"})
+// //.styler({display:'none'}).cond(i==1,'style.display="block"');//.style. ;
+//  //});
+// var im=xInterval;
+// im.at(200,function(){img.style.transform='scale(0.8)';
+//  })
+// im.at(400,function(){img.style.transform='scale(0.6)';})
+// im.at(600,function(){img.style.transform='scale(0.4)';})
+// im.at(800,function(){img.style.transform='scale(0.2)';})
+// im.at(1000,function(){img.style.transform='scale(0.4)';})
+// im.at(1200,function(){img.style.transform='scale(0.6)';})
+// im.at(1400,function(){img.style.transform='scale(0.8)';})
+// im.at(1600,function(){img.style.transform='scale(1)';})
+// im.at(1800,function(){img.style.transform='scale(0.8)';})
+// im.at(2000,function(i,t){img.style.transform='scale(0.8)'; t(0)})
+// im.clockInterval()
+// /*im.at({
+// 	200:function(){img.style.marginLeft="12px"},
+// 400:function(){img.style.marginLeft="840px";},
+// 600:function(){img.style.marginTop="500px";},
+// 800:function(){img.style.marginLeft="12px";},
+// 1000:function(){img.style.marginTop="0px";},
+// 1200:function(){img.style.marginLeft="840px";},
+// 1400:function(){img.style.marginTop="500px";},
+
+// 1600:function(){img.style.marginLeft="12px";},
+// 1800:function(){img.style.marginTop="0px";},
+// 2000:function(i,t){img.style.marginLeft="840px";},
+// 2200:function(){img.style.marginTop="500px";t(0);
+// },
+// });*/
+
+// //img.event({click:function(){clearInterval(i);im.state="stopped"},
+// //dblclick:function(){if(im.state=='stopped'){im.clockInterval(); im.state="running";}}});
+
+
+// var i=im.clockInterval()
+// div.append("br").append("button",{text:"stop"},true).event({
+// 	click:function(){
+// 		if(im.state=='running'){
+// 			clearInterval(i);
+// 			this.innerHTML="resume";
+// 			im.state='stopped';
+// 		}else if(im.state=='stopped'){
+// 			i=im.clockInterval();
+// 			this.innerHTML="stop";
+// 			im.state="running";
+// 		}
+// 	},
+// });
+//div.effect.rotate(1000,function(e){
+//	e.styler({"border-radius":"5px",margin:'4px','transition':"all 2s"});
+//});
+/* modifyElement("test");
+body.append("div",{class:'fr b1px-sc_hccc w400px h500px',id:'trash',text:"REMOVED ITEMS"})
+var div= body.append("div",{class:"w500px h500px"},true);
+ 	div.append("button",{text:"+Create New Line"},true)
+ 	.event({click:function(){
+ 		n=n+1;
+ 		var li=this.parentNode.append("li",{text:n,class:'w300px h50px bgc_ngreen m5px br5px b1px-sc_hccc'},true);
+ 		 butremove=li.append("button",{class:'fr br5px fs8px',text:"remove"},true);
+ 		butremove.event({click:function(){
+ 			var that=this;
+ 			this.parentNode.remove()
+ 			.appendTo('trash').styler({background:'red'}).append("button",{class:'fr br5px fs8px',text:"Delete"},true)
+ 			.event({click:function(){
+ 				this.parentNode.remove()}
+ 			})
+ 			.parentNode.append("button",{class:'fr br5px fs8px',text:"undo"},true)
+ 			.event({click:function(){
+ 				this.parentNode.appendTo(div).styler({background:'green'}).append(butremove);
+ 				this.remove();
+ 			}
+ 		 });
+ 			this.remove();
+ 		}})
+ 	}})*/
+ /*test.event({
+ 	click:function(){alert("hello")},
+ 	mouseover:function(){ test.styler({background:"green", color:'yellow'});},
+ 	mouseleave:function(){ test.replace(best);}
+ }); 
+ best.event({
+ 	mouseleave:function(){ best.replace(test);}
+ });
+ var d=modifyElement("123",{text:"did it worked",style:'color:brown'});
+ d.attr('class','m10px bgc_hdedede',true);
+ d.styler({
+ 	//color:'red',
+ 	'border-width':'5px',
+ })
+ d.event({
+ 	click:function(){ alert("hello")},
+ 	mouseover:function(){this.parentNode.style.background="#ccc"}, //parentNode.style.background="#ccc"
+ 	mouseleave:function(){this.parentNode.style.background="none"}
+ })*/
+Foot.script([
+		{ src:"../../helpers/alias.js"},
+		{ //src:"https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.js"
+	}
+		
+	]);
+ </script>

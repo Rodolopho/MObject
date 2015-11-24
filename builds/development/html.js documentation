@@ -1,0 +1,17 @@
+html.js documentation
+#MObject
+##MO modernize your html object. It all about giving your html or dom element newavater.Check below what you can do with this new avatar of DoM element.
+###Create Element
+####syn:new Element(name,{})
+Method:MO.event({}).styler({}).append(child,true).appendTO(append this to,true).attr(1 for get,2 &3 for set for set)
+.attr[del|get|set].selectText(match).cond(statement.action).remove().replace(newelement).effect[rotate()]
+##Build on Element
+###Head.meta([{},{}]|{}).title(titile)
+###Foot.script([{},{},{}]|{})
+##Build in Helper functions
+###isTest(element)//date|html|array|object|function|string|RegExp|Number
+##Super Functions
+###xInterval.at(time:action.time:action) this.setclock(time) .clockInterval()
+###validation(value,expresion,onerror,onsucess)
+###Ajax(onreaadystatcchage(request))
+

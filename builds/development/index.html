@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html class="">
+<head>
+	<title>Main Test Page</title>
+
+
+	<link rel="stylesheet" type="text/css" href="../../helpers/alias.css">
+
+	<link rel="stylesheet" type="text/css" href="">
+	<script type="text/javascript" src="scripts/testType.js"></script>
+	<script type="text/javascript" src="scripts/helperFunctions.js"></script>
+	<script type="text/javascript" src="scripts/main.js"></script>
+	<gscript type="text/javascript" src="html.js"></script>
+</head>
+<body class="m10pxa w80p ">
+<div id="wrapper" class="bgc_hccc p10px">
+<div id="body-div1" class="">
+	<h1>Welcome to MObject.js, a html elment boster engine</h1>
+	<h2>MO gives power to your DOM Element so that you can acheive great freedom and functionality that had been never experienced before in Dom Element. Tt gives an armor of functions to the native DOM Element which will make your coding easier ,faster and powerfull handler, nake your life easier.</h2>
+	<h3>YOu will feel power with MO when handing DOM element</h3>
+</div>
+<div id="imgact" class="h200px forrotate">
+ 	<img src="../test/img/images(10)">
+ 	<img src="../test/img/images(11)">
+ 	<img src="../test/img/images(12)">
+ 	<img src="../test/img/images(13)">
+ 	<img src="../test/img/images(14)">
+ 	<img src="../test/img/images(15)">
+</div>
+<hr class="b1px-sc_nolive" >
+<div id="xinterval" class="h200px">
+<img id="imgx" src="../test/img/images(16)">	
+</div>
+<hr class="b1px-sc_nolive" >
+	
+<div id="atXxinteral" >
+<img id="imgatx" src="../test/img/images(17)">
+</div>
+<hr class="b1px-sc_nolive" >
+	<div id="xxintra">
+		<img id="imgatxx" src="../test/img/images(18)">
+	</div>
+</div>
+<script type="text/javascript">
+//change image
+imgget=document.getElementById('imgact');
+	img=modifyElement('.forrotate');
+	img.effect.rotate(1000, function(e){e.styler({"border-radius":"5px"})});
+
+//move image	
+	imgx=document.getElementById("imgx");
+	imgx.style.transition="margin 1000ms";
+	imgx.style.transitionTimingFunction="linear";
+
+
+	var n=0;
+	var back;
+	var myintra=new xInterval(function(){
+
+		imgx.style.marginLeft=n+"px";
+		if(n==0){
+			back=false;
+		}else if(n==400){
+			back=true;
+		}
+		if(back){
+			n-=10;
+		}else{
+			n+=10;
+		}
+
+		//n+=10;
+	}).start();
+//move and change image
+/*var m=0, move;
+var imgatx=modifyElement('#imgatx')	;
+imgatx.style.transition="margin 1000ms";
+	imgatx.style.transitionTimingFunction="linear";
+var myxat=new xInterval(false);
+myxat.at(1000,function (i,t){
+		console.log("hury");
+		imgatx.style.marginLeft=m+"px";
+		if(m==0){
+			move=false;
+		}else if(m==400){
+			
+			move=true;
+		}
+		if(move){
+			m-=10;
+		}else{
+			m+=10;
+		}
+		t(0);
+		
+
+}).start();
+imgatx.event({
+	mouseover:function(){
+		myxat.pause();
+	},
+	mouseleave:function(){
+		myxat.resume();
+	}
+})*/
+//xxinterval
+var imgatxx=modifyElement('#imgatxx').styler({transition:"opacity ease-in-out"});
+var xxintra=new xxInterval(false,2000);
+xxintra.at({
+	250:function(){imgatxx.attr("src","../test/img/images(18)")},
+	500:function(){imgatxx.style.opacity=0.75},
+	750:function(){imgatxx.attr("src","../test/img/images(19)")},
+	1000:function(){imgatxx.style.opacity=0.50},
+	1250:function(){imgatxx.attr("src","../test/img/images(20)")},
+	1500:function(){imgatxx.style.opacity=0.25},
+	1750:function(){imgatxx.attr("src","../test/img/images(5)")},
+	2000:function(){imgatxx.style.opacity=0.50},
+}).start();
+
+// var myInter=xInterval(false,false,100);
+// myInter.at(200,function(){
+// 	imgx.style.marginLeft="40px";
+// }).at(400,function(){
+// 		mgx.style.marginLeft="20px";
+// 	})
+// 	.at(800,function(){
+// 		mgx.style.marginLeft="40px";
+// 	})
+// 	.at(1200,function(){
+// 		mgx.style.marginLeft="20px";
+// 	})
+// 	.start();
+
+</script>
+
+<script type="text/javascript" src="../../helpers/alias.js"></script>
+</body>
+</html>

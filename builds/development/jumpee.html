@@ -1,0 +1,157 @@
+<!-- jumpee
+apendto used for game -->
+<!DOCTYPE HTML><html><head><meta http-equiv="X-UA-Compatible" content="IE=edge"></head><body><span class='dn fs8px fl w300px h50px m5px bgc_ngreen m5px br5px b1px-sc_hccc bgc_hccc'></span></body></html>
+<script type="text/javascript" src='scripts/testType.js'></script>
+<script type="text/javascript" src='scripts/helperFunctions.js'></script>
+<script type="text/javascript" src='scripts/main.js'></script>
+
+
+<script>
+var keyControl={
+	up:"",
+	down:"",
+	right:"",
+	left:"",
+	space:""
+}
+
+Head.title("JUMEE:A SIMPLE JS GAME");
+Head.meta([
+		{ charset:'utf-8'},
+		{name:'viewport',content:'width=device-width;initial-scale=1.0'}
+	]);
+Head.meta({developer:"BIKRAM THAPA",product:'GAME  ,name:"JUMPEE'});
+
+var link=new Element('link',{rel:'stylesheet', href:'../../helpers/alias.css'});
+link.appendTo(Head.head);
+ var body=modifyElement(document.body).attr('class'," w1200p bgc_ngreen").append("div",{class:" w1200px pf t0px l0px b1px-sc_hccc"},true);
+ //CODE GOES HERE
+
+ function getRandom(min,max){
+ 	return Math.floor(Math.random()*(max-min))+min;
+ }
+ var max=1200;//(window.innerWidth>0) ? window.innerWidth : screen.width;
+
+
+ var reset=body.append("button",{text:'reset', class:"w50px h50px h_bgc_nolivegreen br100p pf oh r10px t10px b1px-sc_hccc"},true).event({
+
+ });
+ var pause=body.append("button",{text:'start', class:"w50px h50px pf h_bgc_norange br100p oh r10px t70px b1px-sc_hccc"},true).event({click:function(){
+ 		if(this.innerHTML==='start'){
+ 			var bars=document.querySelectorAll(".bar");
+ 			
+ 			 intre=setInterval(function(){
+ 				Array.prototype.forEach.call(bars,function(e){
+ 				e.style.marginLeft=getRandom(0,max)+ "px";
+ 				
+
+ 				e.intra=moveElement(e);
+ 						 		
+		 	});
+ 		
+ 				},1000)
+ 			this.innerHTML='pause';	 
+
+			 }else if(this.innerHTML==='pause'){
+			 	if(clearInterval(intre)){
+			 		
+			 	};
+			 	this.innerHTML="start";
+			 	
+			 		
+			 }
+			
+ 		}
+ });
+ 
+ function moveElement (element){
+ 	
+ 	var n=getRandom(0,max);
+ 		imgx=element;
+ 	imgx.style.transition="margin 1000ms";
+	imgx.style.transitionTimingFunction="linear";
+
+
+	
+	var back;
+	var myintra=new xInterval(function(){
+
+		imgx.style.marginLeft=n+"px";
+		if(n==0){
+			back=false;
+		}else if(n>=max){
+			back=true;
+		}
+		if(back){
+			n-=10;
+		}else{
+			n+=10;
+		}
+
+		//n+=10;
+	}).start();
+	return myintra;
+ }; 
+ var tmax=500;
+ body.append("div",{id:"jd", class:"w24px bar bxs5px10px5px5pxc_nblue mt30px mh16px br5px bgc_nblack"},true).event({click:function(){
+ 			//var handle=moveElement(this);
+
+ 		}}).attr('class',getRandom(0,tmax),true);
+ 		body.append("div",{cloneElement:"jd",style:"background:brown" },true).event({click:function(){
+ 			console.log("clicked");
+ 			d=this.intra;
+ 			this.intra.pause();
+ 			this.intra.resume();
+ 			
+
+ 		}}).style.marginLeft=getRandom(0,tmax)+ "px";
+ 		body.append("div",{cloneElement:"jd"},true).event({click:function(){
+ 			//var handle=moveElement(this);
+
+ 		}}).style.marginLeft=getRandom(0,tmax)+ "px";
+ 		body.append("div",{cloneElement:"jd"},true).event({click:function(){
+ 			//var handle=moveElement(this);
+
+ 		}}).style.marginLeft=getRandom(0,tmax)+ "px";;
+ 		body.append("div",{cloneElement:"jd"},true).event({click:function(){
+ 			//var handle=moveElement(this);
+
+ 		}}).style.marginLeft=getRandom(0,tmax)+ "px";;
+ 		body.append("div",{cloneElement:"jd"},true).event({click:function(){
+ 			//var handle=moveElement(this);
+
+ 		}}).style.marginLeft=getRandom(0,tmax)+ "px";;
+ 		body.append("div",{cloneElement:"jd",style:"background:brown"},true).event({click:function(){
+ 			//var handle=moveElement(this);
+
+ 		}}).style.marginLeft=getRandom(0,tmax)+ "px";;
+ 		body.append("div",{cloneElement:"jd"},true).event({click:function(){
+ 			//var handle=moveElement(this);
+
+ 		}}).style.marginLeft=getRandom(0,tmax)+ "px";;
+ 		body.append("div",{cloneElement:"jd"},true).event({click:function(){
+ 			//var handle=moveElement(this);
+
+ 		}}).style.marginLeft=getRandom(0,tmax)+ "px";;
+ 		body.append("div",{cloneElement:"jd"},true).event({click:function(){
+ 			//var handle=moveElement(this);
+
+ 		}}).style.marginLeft=getRandom(0,tmax)+ "px";;
+ 		body.append("div",{cloneElement:"jd"},true).event({click:function(){
+ 			//var handle=moveElement(this);
+
+ 		}}).style.marginLeft=getRandom(0,tmax)+ "px";;
+ 		body.append("div",{class:'w50px h90px bar bgc_norange m10px'},true).style.marginLeft=getRandom(0,max)+ "px";
+ 		
+
+
+
+ //END OF CODE
+
+ Foot.script([
+		{ src:"../../helpers/alias.js"},
+		{// src:"https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"
+	}
+		
+	]);
+ </script>
